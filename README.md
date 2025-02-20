@@ -133,7 +133,6 @@ To terminate the EC2 instance, go to **AWS Console** → **EC2** → **Terminate
 - If Terraform shows errors, check the **AWS region, IAM roles, and CIDR blocks**.  
 - Keep your **AWS credentials secure** when setting up Terraform.  
 
----
 
 ```
 
