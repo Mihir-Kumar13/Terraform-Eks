@@ -135,7 +135,6 @@ To terminate the EC2 instance, go to **AWS Console** → **EC2** → **Terminate
 
 ---
 
-🎯 **Now you have a fully functional EKS cluster deployed using Terraform and Jenkins! 🚀**  
 ```
 
 ---
