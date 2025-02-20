@@ -1,13 +1,6 @@
 # Terraform-Eks
 
 
-```md
-# EKS Cluster Deployment Using Terraform & Jenkins  
-
-This project sets up an **Amazon EKS cluster** using **Terraform**, with **Jenkins** for automation. We first launch an EC2 instance, install Terraform and Jenkins, and then deploy the EKS cluster.  
-
----
-
 ##  Prerequisites  
 Ensure you have:  
 - Basic Networking
@@ -16,19 +9,11 @@ Ensure you have:
 
 ---
 
-## 📂 Project Structure  
 
-```
-├── installer.sh   # Script to install Terraform & Jenkins  
-├── main.tf        # Terraform configuration for EKS  
-├── variables.tf   # Variables for customization  
-├── outputs.tf     # Outputs like cluster name & endpoint  
-├── README.md      # Documentation  
-```
 
 ---
 
-## 🚀 Step 1: Launch an EC2 Instance  
+##  Step 1: Launch an EC2 Instance  
 
 First, launch an EC2 instance that will act as the **Terraform & Jenkins server**:  
 
@@ -65,7 +50,7 @@ Use the **installer.sh** script to install Terraform and Jenkins:
    ./installer.sh
    ```
 
-### **🔧 What this script does:**  
+### ** What this script does:**  
 ✔ Installs Terraform  
 ✔ Installs & configures Jenkins  
 ✔ Starts Jenkins service  
@@ -104,7 +89,7 @@ Then, follow the Jenkins setup wizard.
 
 ---
 
-## 📌 Step 4: Verify the EKS Cluster  
+##  Step 4: Verify the EKS Cluster  
 
 After Terraform applies the changes, verify your cluster:  
 
@@ -123,7 +108,7 @@ After Terraform applies the changes, verify your cluster:
 
 ---
 
-## ✅ Cleanup  
+##  Cleanup  
 
 To destroy the EKS cluster when done:  
 ```sh
@@ -133,7 +118,7 @@ To terminate the EC2 instance, go to **AWS Console** → **EC2** → **Terminate
 
 ---
 
-## 📌 Resources Used  
+##  Resources Used  
 
 - **Terraform AWS EKS Module**  
 - **AWS VPC, Subnets, IAM Roles**  
@@ -142,7 +127,7 @@ To terminate the EC2 instance, go to **AWS Console** → **EC2** → **Terminate
 
 ---
 
-## 💡 Notes  
+##  Notes  
 
 - Make sure to use **supported Kubernetes versions** (e.g., 1.27).  
 - If Terraform shows errors, check the **AWS region, IAM roles, and CIDR blocks**.  
@@ -155,11 +140,3 @@ To terminate the EC2 instance, go to **AWS Console** → **EC2** → **Terminate
 
 ---
 
-### 🔹 **Why this README?**  
-- **Explains the process in simple steps**  
-- **Covers AWS setup, Terraform execution, and Jenkins installation**  
-- **Provides commands to run everything smoothly**  
-
----
-
-Let me know if you want any modifications! 🚀
